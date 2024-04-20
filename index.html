@@ -1,8 +1,92 @@
-<p>Hello 大家好</p>
-<p>我是霸都丶傲天，这是我的个人网站。 </p>
-<p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>长至的主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="finalworkcss.css" />
+  </head>
 
-<ul>
-  <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-  <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-</ul>
+  <body style="background-color: #f7fcfe" >
+    <div class="outer" id="mainimg">
+      <div class="imgbackgound" style="width: 100%; height: 20px"></div>
+      <div class="imgbackgound" style="width: 100%">
+        <div class="imgbackgound">
+          <div class="TopMenu" id="topmenu">
+            <div style="margin: auto" class="ui huge secondary menu">
+              <a
+                class="item"
+                href="page1.html"
+                target="myIframe"
+                onclick="changepage(1368),checkmusic()"
+                >主页</a
+              >
+              <a
+                class="item"
+                href="page2.html"
+                target="myIframe"
+                onclick="changepage(2248)"
+                >Blog</a
+              >
+              <a
+                class="item"
+                href="page3.html"
+                target="myIframe"
+                onclick="changepage(882)"
+                >联系我</a
+              >
+              <a class="item" href="#aboutsite">关于此网站</a>
+              <div class="highlight"></div>
+              <div class="right menu">
+                <a class="headimg"
+                  ><img
+                    class="ui medium circular mini image"
+                    src="images/headimg.jpg"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="headcontainer">
+        <h1 class="tophead">光而不耀.</h1>
+        <canvas class="lodingunderline" id="underline" height="8px"></canvas>
+        <h2 class="secondaryhead">这里是长至的个人主页</h2>
+      </div>
+      <div class="scroll-down">
+        <img
+          src="images/down.png"
+          style="width: 50px; animation: movedown 1.5s infinite"
+          id="arrowdown"
+        />
+      </div>
+    </div>
+
+    <iframe
+      id="myIframe"
+      name="myIframe"
+      src="page1.html"
+      frameborder="0"
+      width="100%"
+      scrolling="no"
+      height="1368px"
+    >
+    </iframe>
+
+    <div></div>
+  </body>
+  <audio id="music" controls="controls" hidden="true">
+    <source src="music/music.mp3" />
+  </audio>
+
+  <script type="text/javascript" src="home.js"></script>
+
+</html>
