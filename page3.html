@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>长至的主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="finalworkcss.css" />
+  </head>
+  <body style="background-color: #f7fcfe">
+    <div class="bodycontainer" id="bodycontainer">
+      <div style="height: 110px"></div>
+      <div class="ui container" style="margin: auto; width: 1100px">
+        <div class="ui container" style="width: 800px; float: left">
+          <div id="content">
+            <div class="ui red segment" style="border-radius: 10px">
+              <h2 class="ui header">
+                <img src="images/headimg.jpg" class="ui circular image" />
+                <div class="content">
+                  长至
+                  <div class="sub header">ChanZ</div>
+                </div>
+              </h2>
+
+              <h4 class="ui horizontal divider header">社交网站</h4>
+
+              <div class="ui basic segment">
+                <div class="ui two column centered grid">
+                  <div class="two column row">
+                    <div class="column">
+                      <h2 class="ui header">
+                        <button class="circular ui basic pink icon button">
+                          <img
+                            src="images/bilibili.png"
+                            class="ui circular mini image"
+                          />
+                        </button>
+                        <div class="content">
+                          Bilibili
+                          <div class="sub header">每天高强度在线</div>
+                        </div>
+                      </h2>
+                    </div>
+                    <div class="column">
+                      <h2 class="ui header">
+                        <button class="circular ui basic icon button">
+                          <img
+                            src="images/cloudmusic_red.png"
+                            class="ui circular mini image"
+                          />
+                        </button>
+                        <div class="content">
+                          网易云
+                          <div class="sub header">老网抑云了</div>
+                        </div>
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="two column row">
+                    <div class="column">
+                      <h2 class="ui header">
+                        <button class="circular ui black basic icon button">
+                          <img
+                            src="images/douyin.png"
+                            class="ui circular mini image"
+                          />
+                        </button>
+                        <div class="content">
+                          抖音
+                          <div class="sub header">用来发照片</div>
+                        </div>
+                      </h2>
+                    </div>
+                    <div class="column">
+                      <h2 class="ui header">
+                        <button class="circular ui basic icon button">
+                          <img
+                            src="images/steam.png"
+                            class="ui circular mini image"
+                          />
+                        </button>
+                        <div class="content">
+                          Steam
+                          <div class="sub header">-50%</div>
+                        </div>
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+
+                <h4 class="ui horizontal divider header">给我留言</h4>
+
+                <form class="ui reply form">
+                  <div
+                    class="field"
+                    id="imgcontainer"
+                    style="background-size: cover"
+                  >
+                    <textarea></textarea>
+                  </div>
+                  <div class="ui blue labeled submit icon button">
+                    <i class="icon edit"></i> 添加留言
+                  </div>
+                  <h5 class="ui header">
+                    <div class="sub header">
+                      <b>*提示</b>:拖拽图片到文本框可上传图片
+                    </div>
+                  </h5>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div style="clear: both"></div>
+        <div style="height: 20px"></div>
+      </div>
+    </div>
+
+    <footer style="background-color: #ffffff">
+      <div class="ui footer basic segment">
+        <div style="height: 20px"></div>
+        <div style="width: 1100px; margin: auto">
+          <div class="ui vertical footer segment">
+            <div class="ui horizontal small divided link list">
+              <a class="item" target="_blank"
+                >从前种种，譬如昨日死；从后种种，譬如今日生。</a
+              >
+            </div>
+            <img src="images/headimg.jpg" class="ui right floated mini image" />
+          </div>
+        </div>
+        <div style="height: 20px"></div>
+      </div>
+    </footer>
+
+    <audio id="music" controls="controls" hidden="true">
+      <source src="music/music.mp3" />
+    </audio>
+
+    <script type="text/javascript" src="contactme.js"></script>
+  </body>
+</html>

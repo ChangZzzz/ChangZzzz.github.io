@@ -1,0 +1,80 @@
+body {
+  background-color: #dadada;
+}
+body > .grid {
+  height: 100%;
+}
+.image {
+  margin-top: -100px;
+}
+.column {
+  max-width: 300px;
+}
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("images/loginbackground.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(0px) brightness(1);
+  transition: filter 0.5s ease, transform 0.5s ease;
+}
+@keyframes backgroundAnimation {
+  0% {
+    filter: blur(0px) brightness(1);
+    transform: scale(1);
+  }
+  100% {
+    filter: blur(5px) brightness(0.7);
+    transform: scale(1.15);
+  }
+}
+@keyframes backgroundReverseAnimation {
+  0% {
+    filter: blur(5px) brightness(0.7);
+    transform: scale(1.15);
+  }
+  100% {
+    filter: blur(0px) brightness(1);
+    transform: scale(1);
+  }
+}
+@keyframes columnAnimation {
+  0% {
+    max-width: 300px;
+  }
+  100% {
+    max-width: 450px;
+  }
+}
+@keyframes columnReverseAnimation {
+  0% {
+    max-width: 450px;
+  }
+  100% {
+    max-width: 300px;
+  }
+}
+@keyframes segmentAnimation {
+  0% {
+    background: transparent;
+    backdrop-filter: blur(50px);
+  }
+  100% {
+    background-color: #ffffff;
+    backdrop-filter: blur(0px);
+  }
+}
+@keyframes segmentReverseAnimation {
+  0% {
+    background-color: #ffffff;
+    backdrop-filter: blur(0px);
+  }
+  100% {
+    background: transparent;
+    backdrop-filter: blur(50px);
+  }
+}

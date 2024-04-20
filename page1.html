@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>长至的主页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="semantic/dist/semantic.min.css"
+    />
+    <script src="semantic/dist/semantic.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="finalworkcss.css" />
+  </head>
+
+  <body style="background-color: #f7fcfe">
+    <div style="height: 110px"></div>
+    <div
+      class="ui container"
+      style="margin: auto; width: 1100px"
+      id="bodycontainer"
+    >
+      <div class="ui container" style="width: 800px; float: right">
+        <div class="ui basic segment" style="padding: 0px">
+          <div class="ui left attached rail">
+            <div class="ui red card" style="border-radius: 10px">
+              <div class="content">
+                <div class="header">花海</div>
+                <div class="meta">
+                  <span class="right floated time">Jay</span>
+                  <span class="category">送给你的一首歌</span>
+                </div>
+              </div>
+              <div class="content">
+                <div class="ui right floated grid">
+                  <div class="centered row">
+                    <img
+                      class="ui medium circular small image"
+                      src="images/music.jpg"
+                      alt="封面"
+                      style="
+                        animation: musicrotate 10s linear infinite paused;
+                        box-shadow: 0 2px 5px rgba(20, 20, 20, 0.8);
+                      "
+                      id="musicimg"
+                    />
+                  </div>
+                  <div class="centered row">
+                    <div class="column">
+                      <div class="ui red small slider" id="musicslider"></div>
+                      <h4
+                        class="ui center aligned title"
+                        id="music_time"
+                        style="padding: 0px; margin: 0px"
+                      >
+                        0:00/4:40
+                      </h4>
+                    </div>
+                  </div>
+                  <div class="centered row">
+                    <button
+                      class="ui compact red icon button"
+                      onclick="playMusic()"
+                      data-tooltip="播放"
+                      data-position="bottom left"
+                      id="playbutton"
+                    >
+                      <i class="play icon"></i>
+                    </button>
+                    <button
+                      class="ui compact icon button"
+                      onclick="pauseMusic()"
+                      data-tooltip="暂停"
+                      data-position="bottom center"
+                    >
+                      <i class="pause icon"></i>
+                    </button>
+                    <button
+                      class="ui compact icon button"
+                      data-tooltip="添加到我喜欢"
+                      data-position="bottom right"
+                    >
+                      <i class="like icon"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="left floated">
+                  <img class="ui mini image" src="images/cloudmusic.png" />
+                </span>
+              </div>
+            </div>
+          </div>
+          <img
+            class="ui centered medium rounded huge image"
+            src="images/headbackground.jpg"
+          />
+        </div>
+
+        <div class="ui red segment" style="border-radius: 10px">
+          <h2 class="ui center aligned header" style="margin: 30px">
+            苍山负雪，明烛天南
+          </h2>
+          <h5 class="ui right aligned header">—— 登泰山记</h5>
+        </div>
+        <h3 class="ui horizontal divider header">关于我</h3>
+        <div id="content">
+          <div class="ui red segment" style="border-radius: 10px">
+            <h2 class="ui header">
+              <img src="images/headimg.jpg" class="ui circular image" />
+              <div class="content">
+                长至
+                <div class="sub header">ChanZ</div>
+              </div>
+            </h2>
+            <h4 class="ui horizontal divider header" style="font-size: 3.5rem">
+              📕
+            </h4>
+            <h3
+              class="ui centered aligned header"
+              data-tooltip="University of Electronic Science and Technology of China"
+            >
+              <div class="content">
+                现就读于<span class="ui large blue text">电子科技大学</span
+                >/应用物理学
+              </div>
+              <div class="sub header">UESTCer</div>
+            </h3>
+            <h4 class="ui horizontal divider header" style="font-size: 3.5rem">
+              🎯
+            </h4>
+
+            <div class="ui basic segment">
+              <div class="ui two column very relaxed grid">
+                <div class="column">
+                  <h3
+                    class="ui centered aligned header"
+                    data-tooltip="淘来的二手七妖"
+                  >
+                    <div class="content">
+                      <span class="ui large text">📷摄影</span>
+                      <div class="sub header">Niko d7100</div>
+                    </div>
+                  </h3>
+                </div>
+                <div class="column">
+                  <h3 class="ui centered aligned header" data-tooltip="-100%">
+                    <div class="content">
+                      <span class="ui large text">🎮游戏</span>
+                      <div class="sub header">Steam</div>
+                    </div>
+                  </h3>
+                </div>
+              </div>
+              <div class="ui vertical divider">一些爱好</div>
+            </div>
+
+            <h3 class="centeredword">我是长至</h3>
+            <h3 class="centeredword">大三应用物理在读</h3>
+            <h3 class="centeredword">是一名摄影爱好者，游戏糕手</h3>
+            <h3 class="centeredword">喜欢钻研一切有意思的东西：</h3>
+            <h3 class="centeredword">平面设计、游戏建模、视频剪辑...</h3>
+            <h3 class="ui horizontal divider header" style="font-size: 1.5rem">
+              请多指教
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div style="clear: both"></div>
+      <div style="height: 20px"></div>
+    </div>
+
+    <div style="background-color: #ffffff">
+      <div class="ui footer basic segment">
+        <div style="height: 20px"></div>
+        <div style="width: 1100px; margin: auto">
+          <div class="ui vertical footer segment">
+            <div class="ui horizontal small divided link list">
+              <a class="item" target="_blank"
+                >从前种种，譬如昨日死；从后种种，譬如今日生。</a
+              >
+            </div>
+            <img src="images/headimg.jpg" class="ui right floated mini image" />
+          </div>
+        </div>
+        <div style="height: 20px"></div>
+      </div>
+    </div>
+
+    <audio id="music" controls="controls" hidden="true">
+      <source src="music/music.mp3" />
+    </audio>
+
+    <script type="text/javascript" src="page1.js"></script>
+    <script type="text/javascript" src="login.js"></script>
+  </body>
+</html>

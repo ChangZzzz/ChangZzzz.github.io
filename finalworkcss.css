@@ -1,0 +1,149 @@
+.highlight {
+  position: absolute;
+  bottom: 20%;
+  height: 4px;
+  background-color: #bf242a; /* 底部色块的颜色 */
+  transition: width 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.ui.huge.secondary.menu .item {
+  transition: font-size 0.1s ease-in-out; /* 过渡效果：字体大小逐渐改变 */
+}
+.ui.huge.secondary.menu .item:hover {
+  /* 取消 hover 效果 */
+  color: inherit;
+  background-color: inherit;
+}
+.imgbackgound {
+  width: 800px;
+  margin: auto;
+  background: url("images/loginbackground.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.headcontainer {
+  width: 800px;
+  height: 20px;
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.tophead {
+  font-size: 5rem;
+  color: #ffffff;
+  font-weight: 500;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.secondaryhead {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-weight: 300;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  top: calc(5rem + 5px);
+}
+.headimg {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+.lodingunderline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  top: calc(5rem + 5px);
+}
+.outer {
+  background: url("images/loginbackground.jpg") no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  /* 背景图属性 */
+  background-attachment: fixed;
+}
+.scroll-down {
+  position: absolute;
+  bottom: 20px; /* 调整图标与底部的距离 */
+  left: 50%;
+  transform: translateX(-50%);
+}
+.centeredword {
+  font-size: 1.1rem;
+  width: fit-content;
+  margin: auto;
+  margin-top: 14px;
+  font-weight: 520;
+}
+
+@keyframes musicrotate {
+  from {
+    transform: rotateZ(0);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+@keyframes movedown {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  50% {
+    transform: translate(0px, -10px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes moveup {
+  0% {
+    transform: rotateZ(180deg) translate(0px, 0px);
+  }
+  50% {
+    transform: rotateZ(180deg) translate(0px, -10px);
+  }
+  100% {
+    transform: rotateZ(180deg) translate(0px, 0px);
+  }
+}
+
+.TopMenu {
+  margin: auto;
+  width: 500px;
+  border-radius: 5px;
+  padding: 1em;
+  backdrop-filter: blur(5px);
+  box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+  transition: all 0.4s ease;
+  background: transparent;
+  background: rgba(255, 255, 255, 0.1);
+}
+/*改变后样式*/
+.TopMenu.fixed {
+  width: 800px;
+  padding: 1em;
+  backdrop-filter: blur(50px);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+  height: 80px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.grid-item {
+  border: 0px;
+  padding: 5px;
+  text-align: center;
+}
+.grid-item img {
+  max-width: 100%;
+  height: auto;
+}
